@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <display-name>My Web Application</display-name>
+  <description>
+A application for bookshop.
+</description>
+<!-- ***************** 字符控制 ***************** -->
+<filter>
+<filter-name>Set Encoding</filter-name>
+<filter-class>SetEncodingFilter</filter-class>
+</filter>
+<filter-mapping>
+<filter-name>Set Encoding</filter-name>
+<url-pattern>/*</url-pattern>
+</filter-mapping>
+<!--********** 用户购书系统 *******************
+********** ShowBook.java mapping **********-->
+<servlet>
+<servlet-name>ShowBook</servlet-name>
+<servlet-class>ShowBook</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ShowBook</servlet-name>
+<url-pattern>/ShowBook</url-pattern>
+</servlet-mapping>
+<!--********** UserRegister.java mapping **********-->
+<servlet>
+<servlet-name>UserRegister</servlet-name>
+<servlet-class>UserRegister</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>UserRegister</servlet-name>
+<url-pattern>/UserRegister</url-pattern>
+</servlet-mapping>
+<!--********** UserLogin.java mapping **********-->
+<servlet>
+<servlet-name>UserLogin</servlet-name>
+<servlet-class>UserLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>UserLogin</servlet-name>
+<url-pattern>/UserLogin</url-pattern>
+</servlet-mapping>
+<!--********** AddComment.java mapping **********-->
+<servlet>
+<servlet-name>AddComment</servlet-name>
+<servlet-class>AddComment</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>AddComment</servlet-name>
+<url-pattern>/AddComment</url-pattern>
+</servlet-mapping>
+<!--********** ChangeUserInf.java mapping **********-->
+<servlet>
+<servlet-name>ChangeUserInf</servlet-name>
+<servlet-class>ChangeUserInf</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ChangeUserInf</servlet-name>
+<url-pattern>/ChangeUserInf</url-pattern>
+</servlet-mapping>
+<!--********** ChangeUserPwd.java mapping **********-->
+<servlet>
+<servlet-name>ChangeUserPwd</servlet-name>
+<servlet-class>ChangeUserPwd</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ChangeUserPwd</servlet-name>
+<url-pattern>/ChangeUserPwd</url-pattern>
+</servlet-mapping>
+<!--********** AddCart.java mapping **********-->
+<servlet>
+<servlet-name>AddCart</servlet-name>
+<servlet-class>AddCart</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>AddCart</servlet-name>
+<url-pattern>/AddCart</url-pattern>
+</servlet-mapping>
+<!--********** EmptyCart.java mapping **********-->
+<servlet>
+<servlet-name>EmptyCart</servlet-name>
+<servlet-class>EmptyCart</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>EmptyCart</servlet-name>
+<url-pattern>/EmptyCart</url-pattern>
+</servlet-mapping>
+<!--********** ChangeOrder.java mapping **********-->
+<servlet>
+<servlet-name>ChangeOrder</servlet-name>
+<servlet-class>ChangeOrder</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ChangeOrder</servlet-name>
+<url-pattern>/ChangeOrder</url-pattern>
+</servlet-mapping>
+<!--********** SubmitOrder.java mapping **********-->
+<servlet>
+<servlet-name>SubmitOrder</servlet-name>
+<servlet-class>SubmitOrder</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>SubmitOrder</servlet-name>
+<url-pattern>/SubmitOrder</url-pattern>
+</servlet-mapping>
+<!--********** UserExit.java mapping **********-->
+<servlet>
+<servlet-name>UserExit</servlet-name>
+<servlet-class>UserExit</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>UserExit</servlet-name>
+<url-pattern>/UserExit</url-pattern>
+</servlet-mapping>
+<!--********** 管理员管理系统 *******************
+********** AdminLogin.java mapping **********-->
+<servlet>
+<servlet-name>AdminLogin</servlet-name>
+<servlet-class>AdminLogin</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>AdminLogin</servlet-name>
+<url-pattern>/AdminLogin</url-pattern>
+</servlet-mapping>
+<!--********** DeleteUser.java mapping **********-->
+<servlet>
+<servlet-name>DeleteUser</servlet-name>
+<servlet-class>DeleteUser</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>DeleteUser</servlet-name>
+<url-pattern>/DeleteUser</url-pattern>
+</servlet-mapping>
+<!--********** DeleteBook.java mapping **********-->
+<servlet>
+<servlet-name>DeleteBook</servlet-name>
+<servlet-class>DeleteBook</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>DeleteBook</servlet-name>
+<url-pattern>/DeleteBook</url-pattern>
+</servlet-mapping>
+<!--********** DeleteComment.java mapping **********-->
+<servlet>
+<servlet-name>DeleteComment</servlet-name>
+<servlet-class>DeleteComment</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>DeleteComment</servlet-name>
+<url-pattern>/DeleteComment</url-pattern>
+</servlet-mapping>
+<!--********** ChangeBookInf.java mapping **********-->
+<servlet>
+<servlet-name>ChangeBookInf</servlet-name>
+<servlet-class>ChangeBookInf</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ChangeBookInf</servlet-name>
+<url-pattern>/ChangeBookInf</url-pattern>
+</servlet-mapping>
+<!--********** AddBook.java mapping **********-->
+<servlet>
+<servlet-name>AddBook</servlet-name>
+<servlet-class>AddBook</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>AddBook</servlet-name>
+<url-pattern>/AddBook</url-pattern>
+</servlet-mapping>
+<!--********** AdminExit.java mapping **********-->
+<servlet>
+<servlet-name>AdminExit</servlet-name>
+<servlet-class>AdminExit</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>AdminExit</servlet-name>
+<url-pattern>/AdminExit</url-pattern>
+</servlet-mapping>
+<!--********** 两系统共用 ***********************
+********** MenuHidden.java mapping **********-->
+<servlet>
+<servlet-name>MenuHidden</servlet-name>
+<servlet-class>MenuHidden</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>MenuHidden</servlet-name>
+<url-pattern>/MenuHidden</url-pattern>
+</servlet-mapping>
+<!--********** MenuShow.java mapping **********-->
+<servlet>
+<servlet-name>MenuShow</servlet-name>
+<servlet-class>MenuShow</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>MenuShow</servlet-name>
+<url-pattern>/MenuShow</url-pattern>
+</servlet-mapping>
+</web-app>
